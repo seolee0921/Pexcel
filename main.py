@@ -8,7 +8,7 @@ ws = wb.active
 
 image = cv2.imread("dou3.jpg")
 
-pixel = 7
+pixel = 20
 
 
 def _from_rgb(rgb):
