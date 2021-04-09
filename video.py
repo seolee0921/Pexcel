@@ -10,7 +10,7 @@ excel = win32com.client.Dispatch("Excel.Application")
 wb = Workbook()
 ws = wb.active
 
-pixel = 3
+pixel = 5
 
 def _from_rgb(rgb):
     return "%02x%02x%02x" % rgb
@@ -52,7 +52,8 @@ while True:
             ws.cell(row=y, column=x).fill = PatternFill(fgColor=_from_rgb((R, G, B)), fill_type='solid')
         istrue = True
 
-    print("SUCESS")
     wb.save("print-picture.xlsx")
     break
+
 open("print-picture.xlsx")
+print("SUCESS")
