@@ -2,7 +2,6 @@ import cv2
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill
 from openpyxl.utils.cell import get_column_letter
-import win32com.client
 
 wb = Workbook()
 ws = wb.active
@@ -31,24 +30,18 @@ def capture(camid=CAM_ID):
     cam.release()
 
 
-while True:
-    capture()
+capture()
 
-    image = cv2.imread("save_video.png")
+image = cv2.imread("save_video.png")
 
-    istrue = False
+for y in range(1, int(image.shape[0] / pixel)):
+    for x in range(1, int(image.shape[1] / pixel)):
+        cell = get_column_letter(x)
+        ws.column_dimensions[cell].width = 3
+        (B, G, R) = image[y * pixel][x * pixel]
+        ws.cell(row=y, column=x).fill = PatternFill(fgColor=_from_rgb((R, G, B)), fill_type='solid')
 
-    for y in range(1, int(image.shape[0] / pixel)):
-        for x in range(1, int(image.shape[1] / pixel)):
-            if(istrue == False):
-                cell = get_column_letter(x)
-                ws.column_dimensions[cell].width = 3
-            (B, G, R) = image[y * pixel][x * pixel]
-            ws.cell(row=y, column=x).fill = PatternFill(fgColor=_from_rgb((R, G, B)), fill_type='solid')
-        istrue = True
-
-    wb.save("print-picture.xlsx")
-    break
+wb.save("print-picture.xlsx")
 
 open("print-picture.xlsx")
-print("SUCESS")
+print("SUCCESS")
