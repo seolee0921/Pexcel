@@ -8,12 +8,12 @@ from win32api import GetSystemMetrics
 GUI_XSIZE = int(GetSystemMetrics(0) / 3 * 2)
 GUI_YSIZE = int(GetSystemMetrics(1) / 3 * 2)
 
+
 class APP(QWidget):
 
     def __init__(self):
         super().__init__()
         self.INITUI()
-
 
     def INITUI(self):
         self.CSS()
@@ -21,9 +21,6 @@ class APP(QWidget):
         self.IMAGE()
 
         self.show()
-
-    def IMAGE(self):
-
 
     def CENTER(self):
         qr = self.frameGeometry()
@@ -49,6 +46,7 @@ class APP(QWidget):
 
         qp.setPen(QColor(28, 28, 31))
         qp.drawLine(0, 40, GUI_XSIZE, 40)
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
