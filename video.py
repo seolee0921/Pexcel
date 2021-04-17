@@ -43,8 +43,8 @@ while True:
 
     istrue = False
 
-    for y in range(1, int(image.shape[0] / pixel)):
-        for x in range(1, int(image.shape[1] / pixel)):
+    for y in range(1, int(image.shape[0] / pixel) + 1):
+        for x in range(1, int(image.shape[1] / pixel + 1)):
             if(istrue == False):
                 cell = get_column_letter(x)
                 ws.column_dimensions[cell].width = 3

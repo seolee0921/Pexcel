@@ -6,9 +6,9 @@ from openpyxl.utils.cell import get_column_letter
 wb = Workbook()
 ws = wb.active
 
-image = cv2.imread("dou3.jpg")
+image = cv2.imread("DOUDA LOGO.png")
 
-pixel = 20
+pixel = 10
 
 
 def _from_rgb(rgb):
