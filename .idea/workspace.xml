@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b965eb7-39e7-4c0c-a2e0-fb4e264866a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DOUDA LOGO.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DOUDA.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/print-picture.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/print-picture.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video.py" beforeDir="false" afterPath="$PROJECT_DIR$/video.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +32,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Face Mask Detector" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunManager" selected="Python.application">
